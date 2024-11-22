@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login<br>E entre para o nosso time</h1>
+            <img src="music-animate.svg" class="left-login-img" alt="elemento musica flutuante">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <form id="form-login">
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="login-usuario" placeholder="Usuário" required>
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="login-senha" placeholder="Senha" required>
+                    </div>
+                    <div class="buttonsLogin">
+                        <button type="submit" class="btn-login">Login</button>
+                        <a class="tp-guest" href="../aplicativo/index.html"><button type="button" class="btn-guest">Guest</button></a>
+                    </div>
+                </form>
+                <a href="../cadastro/cadastro.html">
+                    <h1>Não tem uma conta? <span>Inscrever-se no Vibez</span></h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="../login/login.js"></script>
+</body>
+</html>

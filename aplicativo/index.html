@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../aplicativo/style.css">
+</head>
+<body>
+    <div class="barra-de-cima">
+        <input class="caixa-pesquisa" type="text" placeholder="Pesquise sua música preferida aqui...">
+        <nav>
+            <ul>
+                <li id="perfil">
+                    <a href="#" id="icone-perfil"><i class="fas fa-user"></i></a>
+                    <div class="menu-usuario" id="menu-usuario">
+                        <div class="card-usuario" id="opcoes-deslogado">
+                            <a id="logar" href="../login/login.html">Login</a>
+                            <a id="cadastrar" href="../cadastro/cadastro.html">Cadastrar</a>
+                        </div>
+                        <div class="card-usuario" id="usuario-logado">
+                            <button id="logout">Sair</button>
+                            <button id="myprofile">Meu Perfil</button>
+                        </div>
+                    </div>
+                </li>
+                <li id="config"><a href="#" onclick="irParaProdutores()"><i class="fas fa-cog"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="barra-esquerda">
+        <img src="../assets/imagens/width_200-_1_.png" alt="Logo Vibez" class="logo">
+        <ul>
+            <button><li><a href="#"><i class="fas fa-home"></i></a></li></button>
+            <button id="cadastromusica"><li><a href="#"><i class="fas fa-music"></i></a></li></button>
+            <button><li><a href="#"><i class="fas fa-share-alt"></i></a></li></button>
+            <button><li><a href="#"><i class="fas fa-compass"></i></a></li></button>
+            <button><li><a href="#"><i class="fas fa-info-circle"></i></a></li></button>
+        </ul>
+    </div>
+    <div class="secao">
+        <div class="categorias">
+            <button class="podcasts">Podcasts</button>
+            <button>Relax</button>
+            <button>Para ouvir no trânsito</button>
+            <button>Energia</button>
+            <button>Para treinar</button>
+            <button>Romance</button>
+            <button>Positividade</button>
+            <button>Festa</button>
+            <button>Foco</button>
+            <button>Triste</button>
+        </div>
+        <h2 class="titulo-recomendacao">Recomendações</h2>
+        <div class="recomendacoes">
+
+            <div class="album-card" onclick="window.location.href='Reino.html';">
+                <img src="../assets/imagens/unnamed (1).png" alt="Álbum 1">
+                <p>Reino Gospel</p>
+            </div>
+            <div class="album-card" onclick="window.location.href='Gif.html';">
+                <img src="../assets/imagens/unnamed (3).png" alt="Álbum 2">
+                <p>GIF Pop BR</p>
+            </div>
+            <div class="album-card" onclick="window.location.href='Sertanejo.html';">
+                <img src="../assets/imagens/unnamed (2).png" alt="Álbum 3">
+                <p>Festa Sertaneja</p>
+            </div>
+            <div class="album-card" onclick="window.location.href='Shoegaze.html';">
+                <img src="../assets/imagens/unnamed (4).png" alt="Álbum 4">
+                <p>Shoegaze</p>
+            </div>
+            <div class="album-card" onclick="window.location.href='Phonk.html';">
+                <img src="../assets/imagens/unnamed.png" alt="Álbum 5">
+                <p>Brazilian Phonk</p>
+            </div>
+        </div>
+        <h2 class="lancamento-titulo">Lançamentos</h2>
+        <div class="lancamentos">
+            <div class="album-card" onclick="window.location.href='Praiou.html';">
+                <img src="../assets/imagens/Praiou (Deluxe).png" alt="Álbum 1">
+                <p>Praiou (Deluxe)</p>
+            </div>
+            <div class="album-card" onclick="window.location.href='Embaixa.html';">
+                <img src="../assets/imagens/Acústico.png" alt="Álbum 2">
+                <p>Embaixador Acústico</p>
+            </div>
+            <div class="album-card" onclick="window.location.href='Heavy.html';">
+                <img src="../assets/imagens/Heaven is the Crown.png" alt="Álbum 3">
+                <p>Heavy Is the Crown</p>
+            </div>
+            <div class="album-card" onclick="window.location.href='jose.html';">
+                <img src="../assets/imagens/José & Durval.png" alt="Álbum 4">
+                <p>José & Durval</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="titulo-cadastro">Seus Álbuns</h2>
+<div id="user-albums" class="recomendacoes"></div>
+
+
+<script src="../aplicativo/script.js"></script>
+</body>
+</html>

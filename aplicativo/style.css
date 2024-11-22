@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #10101b;
+    color: #1e1e35;
+}
+
+.barra-de-cima {
+    background-color: #1e1e35;
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    padding: 15px;
+}
+
+nav {
+    display: flex; /* Adiciona flex para o nav */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espaçamento entre os ícones */
+}
+
+nav ul li a {
+    color: #61afdc;
+    text-decoration: none;
+}
+
+#perfil::before {
+    content: "\f007"; 
+    font-family: "FontAwesome";
+}
+
+#config::before {
+    content: "\f013"; 
+    font-family: "FontAwesome";
+}
+
+.barra-esquerda {
+    background-color: #181831;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.barra-esquerda ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.barra-esquerda ul li {
+    margin-bottom: 30px;
+    padding-top: 1.5rem;
+}
+.barra-esquerda ul li a {
+    color: #61afdc;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.caixa-pesquisa {
+    margin: 0 auto; /* Centraliza a barra de pesquisa */
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    background-color: #10101b;
+    color: #61afdc;
+    text-align: center;
+    max-width: 600px; /* Limita a largura máxima da barra de pesquisa */
+    width: 100%; /* Permite que a barra de pesquisa utilize toda a largura disponível */
+    margin-left: calc((100% - 600px) / 2); /* Adiciona margem esquerda para centralizar */
+}
+.caixa-pesquisa:hover{
+    outline: #4d96c1 2px solid;
+}
+
+    
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 10px;
+}
+.categorias button {
+    background-color: #1e1e35;
+    color: #61afdc;
+    border: none;
+    padding: 10px 56px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+
+.categorias button:hover {
+    background-color: #303041;
+    outline: #4d96c1 2px solid;
+}
+
+.secao {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+.secao h2 {
+    color: #61afdc;
+    margin-bottom: 10px;
+    padding-top: 1rem;
+   
+}
+
+.album-card {
+    display: inline-block;
+    background-color: #181831;
+    width: 150px;
+    margin-right: 15px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.album-card:hover{
+    background-color: #2c2c44;
+    outline: #4f6979 2px solid;
+}
+
+.album-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.album-card p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.logo {
+    width: 65px; /* Ajustei um pouco o tamanho para evitar o corte */
+    height: auto;
+    margin-bottom: 20px;
+    padding: 5px; /* Adicionei um padding para garantir que a imagem não seja cortada */
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho da imagem */
+}
+.menu-usuario {
+    position: absolute;
+    right: 5px;
+    top: 50px;
+    background: #2c2c44;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+
+}
+.menu-usuario.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
+
+#myprofile {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #61afdc;
+    color: black;
+}
+#myprofile:hover {
+    background-color: #7ed2ff ;
+    transition-duration: 500ms;
+    scale: 1.1;
+}
+#logout {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #61afdc;
+    color: black;
+    
+}
+#logout:hover {
+    background-color: #7ed2ff ;
+    transition-duration: 500ms;
+    scale: 1.1;
+}
+#logar, #cadastrar {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #61afdc;
+    color: black;
+}
+#logar:hover, #cadastrar:hover{
+    background-color: #7ed2ff ;
+    transition-duration: 500ms;
+    scale: 1.1;
+}
+
+.barra-esquerda ul {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os botões horizontalmente */
+    padding: 0; /* Remove o padding */
+    margin: 0; /* Remove a margem */
+}
+
+.barra-esquerda ul button {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Mostra o cursor de mão ao passar o mouse */
+    transition: all 0.3s ease; /* Transição suave para o efeito */
+}
+

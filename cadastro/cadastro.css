@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+* {
+    font-family:'Noto Sans', sans-serif;
+    margin: none;
+}
+
+body {
+    margin: 0;
+    background: url("../assets/imagens/background-cadastro.svg") center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: #2f2841bb;
+    backdrop-filter: blur(6px);
+    width: 37rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+img {
+    width: 150px; 
+    height: 150px;
+
+    box-sizing: border-box;
+}
+
+.texto1 {
+    font-size: 1.6rem;
+    color: #61afdc;
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 9000px;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.cadastro{
+    color: #339fdd;
+    font-weight: 1000;
+    letter-spacing: 3px ;
+    margin: 0;
+    font-size: 2.4rem;
+    text-shadow: 0 0 3px #339fdd, 0 0 5px #6675f0;
+}
+
+.btn-cadastro{
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #2b134b;
+    background-color: #61afdc;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 1px 30px -12px #339fdd ;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-cadastro:hover{
+    background-color: #7ed2ff ;
+    transition-duration: 500ms;
+    scale: 1.1;
+}
+
+.textfield {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+.textfield > label {
+    font-weight: 600;
+}
+
+.textfield > input {
+    max-width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background:#514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+}
+
+.textfield > input::placeholder {
+    color: white;
+}
+
+.textfield > input:focus {
+    outline: #61afdc 2px solid;
+}
+
+.right-login {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card-login{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+    align-self: flex-start;
+
+}
